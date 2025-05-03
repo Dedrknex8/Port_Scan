@@ -2,6 +2,12 @@ import socket
 import datetime
 import time
 
+print("For educational purpose only")
+# ````
+# A Tool made for education purpose.
+# Please use it for learning only
+# Happy hacking
+# ``````
 target = input("Please Enter the ip address : ")
 
 def portScan(target):
@@ -24,6 +30,10 @@ def portScan(target):
 
     except socket.error:
         print("could not connect to host")
+    
+    except KeyboardInterrupt:
+        print("Quiting the scan ..")
 
 portScan(target)
+
 
